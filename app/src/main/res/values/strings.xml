@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ListTest</string>
+    <string name="news_image_description">新闻图片</string>
+</resources>
