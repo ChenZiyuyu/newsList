@@ -13,7 +13,7 @@ class NewsAdapter(private var newsList: List<NewsItem>) : RecyclerView.Adapter<N
         val titleTextView: TextView = itemView.findViewById(R.id.titleTextView)
         val timeTextView: TextView = itemView.findViewById(R.id.timeTextView)
         val sourceTextView: TextView = itemView.findViewById(R.id.sourceTextView)
-        val newsImageView: ImageView = itemView.findViewById(R.id.newsImageView)
+
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NewsViewHolder {

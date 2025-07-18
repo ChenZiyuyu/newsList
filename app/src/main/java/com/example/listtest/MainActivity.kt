@@ -32,6 +32,7 @@ class MainActivity : AppCompatActivity() {
 
         // 获取新闻数据
         fetchNews()
+
     }
 
 
@@ -49,9 +50,7 @@ class MainActivity : AppCompatActivity() {
 
         // 异步执行请求
         client.newCall(request).enqueue(object : Callback {
-            // 请求失败时的回调
             override fun onFailure(call: Call, e: IOException) {
-                // 确保在 UI 线程上显示 Toast
                 runOnUiThread {
                     Toast.makeText(applicationContext, "网络请求失败: ${e.message}", Toast.LENGTH_LONG).show()
                 }
