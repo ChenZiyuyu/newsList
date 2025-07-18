@@ -9,9 +9,9 @@
 
     <View
         android:id="@+id/timeline"
-        android:layout_width="2dp"
+        android:layout_width="1dp"
         android:layout_height="0dp"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="60dp"
         android:background="@android:color/darker_gray"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,19 +32,20 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:textSize="18sp"
+        android:textColor="#4A90E2"
         app:layout_constraintBaseline_toBaselineOf="@id/titleTextView"
         app:layout_constraintStart_toEndOf="@id/timeline"
-        tools:text="16:55" />
+
+        />
 
     <TextView
         android:id="@+id/titleTextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="60dp"
         android:textColor="@android:color/black"
         android:textSize="20sp"
-        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/timeTextView"
         app:layout_constraintTop_toTopOf="parent"
@@ -56,6 +57,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:textSize="18sp"
+        android:layout_marginEnd="60dp"
         app:layout_constraintEnd_toEndOf="@id/titleTextView"
         app:layout_constraintTop_toBottomOf="@id/titleTextView"
         tools:text="这里是新闻的详细内容或者来源信息。" />
