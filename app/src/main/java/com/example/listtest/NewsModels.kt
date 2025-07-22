@@ -1,5 +1,3 @@
-// file: app/src/main/java/com/example/listtest/NewsModels.kt
-
 package com.example.listtest
 
 import com.google.gson.annotations.SerializedName
