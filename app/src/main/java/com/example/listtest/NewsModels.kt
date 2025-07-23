@@ -17,7 +17,12 @@ data class NewsDataContainer(
 
 
 data class NewsItem(
+    @SerializedName("id") val id:String?,
     @SerializedName("content") val title: String?,
     @SerializedName("view_num") val source: String?,
     @SerializedName("ctime") val time: String?
 )
+sealed class DisplayableItem{
+    data class News(val newsItem: NewsItem) : DisplayableItem()
+    data class DateHeader(val date: String) : DisplayableItem()
+}

@@ -30,6 +30,7 @@ android {
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
+        isCoreLibraryDesugaringEnabled = true
     }
 
     kotlinOptions {
@@ -59,13 +60,14 @@ dependencies {
     // Gson 用于解析 JSON 数据
     implementation("com.google.code.gson:gson:2.10.1")
 
+    // API 脱糖库
+    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.0.4")
 
     // --- 测试相关的库 ---
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     implementation ("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0")
-    implementation("androidx.appcompat:appcompat:1.0.0")      // 必须 1.0.0 以上
 
     implementation("io.github.scwang90:refresh-layout-kernel:3.0.0-alpha")  // 核心必须依赖
     implementation("io.github.scwang90:refresh-header-classics:3.0.0-alpha") // 经典刷新头
