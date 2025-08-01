@@ -9,11 +9,11 @@
 
     <View
         android:id="@+id/timeline"
-        android:layout_width="1dp"
+        android:layout_width="0.7dp"
         android:layout_height="0dp"
-        android:layout_marginStart="40dp"
+        android:layout_marginStart="18dp"
         android:layout_marginTop="8dp"
-        android:background="@android:color/darker_gray"
+        android:background="#A8A8A8"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dotMarker" />
@@ -34,7 +34,7 @@
         android:layout_height="0dp"
         android:layout_marginStart="16dp"
         android:textColor="#4A90E2"
-        android:textSize="18sp"
+        android:textSize="10sp"
         app:layout_constraintStart_toEndOf="@id/timeline"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="14:48:58" />
@@ -44,9 +44,9 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginEnd="20dp"
         android:textColor="@android:color/black"
-        android:textSize="20sp"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@id/timeTextView"
         app:layout_constraintTop_toBottomOf="@id/timeTextView"
@@ -57,7 +57,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:textSize="18sp"
+        android:layout_marginEnd="5dp"
+        android:textSize="10sp"
         app:layout_constraintEnd_toEndOf="@id/titleTextView"
         app:layout_constraintTop_toBottomOf="@id/titleTextView"
         tools:text="来源" />
